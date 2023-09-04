@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgba(56, 56, 56, 0.041);
+    padding: 25px;
+  
+    /* background-color: #e3d4d4; */
+  }
+.header{
+    display: flex;
+    justify-content: space-evenly;
+}
+.netify{
+color: red;
+letter-spacing: 3px;
+
+}
+.netify-h1{
+    animation: design;
+    animation-duration: 2s;
+}
+@keyframes design{
+    0%{
+        color: rgb(161, 58, 58);
+    }
+    25%{
+        color: rgb(168, 57, 57);
+    }
+    50%{
+        color: rgb(198, 47, 47);
+    }
+    100%{
+        color: rgb(255, 0, 0);
+    }
+}
+
+
+
+
+.netify-background{
+    margin-top: 2%;
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    text-align: center;
+    gap: 2%;
+    align-items: center;
+    background-color: rgb(249, 238, 238);
+    flex-wrap: wrap;   
+}
+.netify-background p{
+    letter-spacing: 1px;
+    line-height: 2;
+    width:50%;
+}
+.background-color{
+    border-bottom-style:solid;
+    border-bottom-color: red;
+    width:10%;
+    height: 40%;
+    background-color: rgba(237, 230, 230, 0.368);
+}
+.background-color h1{
+    font-size: 70px;
+    color: red;
+    transform: translateY(30px);
+}
+.watch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.movies{
+    transform: translateX(70px);
+    border: none;
+    padding: 0.5% 1%;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    
+    cursor: pointer;
+    position: relative;
+}
+.movies:before{
+    content: "";
+    position: absolute;
+    width: 15%;
+    height: 30%;
+    top: -3%;
+    left: -2%;
+    border-top: 2px solid red;
+    border-left: 2px solid red;
+    transition: all 1s;
+}
+.movies:after{
+    content: "";
+    position: absolute;
+    width: 15%;
+    height: 30%;
+    bottom: -1%;
+    right: -2%;
+    border-bottom: 2px solid red;
+    border-right: 2px solid red;
+    transition: all 1s;
+}
+.movies:hover:before,.movies:hover:after{
+    height: 100%;
+    width: 100%;
+}
+
+.hr{
+    border: 1px dashed rgb(219, 210, 210);
+    width: 100%;
+}
+.List{
+    display: flex;
+    height: 30vh;
+    gap: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.carousel{
+width: 20%;
+text-align: center;
+}
+.carousel-item{
+    transition: transform 1s ease-in-out;
+}
+
+.footer{
+    margin-top: 20px;
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (min-width: 727px) and (max-width: 823px) {
+    .netify-background{
+        gap: 10%;
+    }
+    .movies{
+        transform: translateX(65px);
+    }
+    .carousel{
+        width: 40%;
+    }
+    .List{
+        gap: 0px;
+    }
+
+  }  
+  @media only screen and (min-width: 439px) and (max-width: 727px) {
+    .netify-background p{
+        width: 70%;
+    }
+    .movies{
+        transform: translateX(10px);
+    }
+    .background-color{
+        visibility: hidden;
+    }
+    .carousel{
+        width: 40%;
+        text-align: center;
+        }
+
+  }  
+  @media only screen and (min-width: 320px) and (max-width: 439px) {
+    .netify-background p{
+        width: 85%;
+        line-height: 2;
+        letter-spacing: 0px;
+    }
+    .movies{
+        transform: translateX(10px);
+    }
+    .background-color{
+        visibility: hidden;
+    }
+    .carousel{
+        width: 40%;
+        text-align: center;
+        }
+
+
+  }  
+  @media only screen and (min-width: 237px) and (max-width: 320px) {
+    .netify-background{
+        flex-direction: column;
+    }
+    .netify-background p{
+        width: 100%;
+        line-height: 1.5;
+        letter-spacing: 0px;
+    }
+    .movies{
+        transform: translateX(2px);
+    }
+    .background-color{
+        width: 0%;
+        height: 0%;
+
+    }
+    .background-color h1{
+        font-size: 0px;
+        transform: translateY(0px);
+        
+    }
+    .carousel-item h4{
+        font-size: 12px;
+    }
+    .carousel{
+        width: 100%;
+        }
+        .List{
+            flex-direction: column;
+        }
+
+  }  
+  @media only screen and (min-width: 100px) and (max-width: 237px) {
+    body{
+        padding: 0px;
+    }
+    .netify-background{
+        flex-direction: column;
+    }
+    .netify-background p{
+        width: 100%;
+        line-height: 1.2;
+        letter-spacing: 0px;
+    }
+    .movies{
+        font-size: 12px;
+        transform: translateX(1px);
+        padding: 0% 0%;
+
+    }
+    
+    .background-color{
+        width: 0%;
+        height: 0%;
+
+    }
+    .background-color h1{
+        font-size: 0px;
+        transform: translateY(0px);
+        
+    }
+    .List{
+        flex-direction: column;
+        gap: 0px;
+    }
+    .carousel{
+        width: 100%;
+        }
+        .carousel-item h4{
+            font-size: 14px;
+        }
+
+
+  }  
+
+
+  
+
+
+
+
+
+
+  
+
