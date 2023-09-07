@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(203, 217, 206, 0.08);
+}
+.heading{
+    margin-top: 20px;
+    letter-spacing: 2px;
+    font-family: 'Outfit', sans-serif;
+    grid-column: span 9;
+    color: rgb(105, 103, 103);
+}
+.container{
+    border-radius: 13px;
+    border: 11px solid rgb(104, 101, 101);
+    position: relative;
+    top: 130px;
+    width: 250px;
+    height: 400px;;
+    display: grid;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+    grid-template-columns: 0.1fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr;
+    /* grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.2fr;
+    grid-template-columns: 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr ; */
+    gap: 7px;
+    padding: 12px;
+    background-color: rgba(108, 183, 224, 0.61);
+}
+
+.items{
+    background-color: rgba(239, 232, 232, 0.701);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.display{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight:300;
+    grid-column: span 9;
+    background-color: rgb(59, 58, 58);
+    color: white;
+    letter-spacing: 1.5px;
+    word-break: break-all;
+}
+
+
+.arithmetic{
+    grid-column: span 3;
+    text-align: center;
+    
+}
+.arithmetic-base{
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: 2px;
+    background-color: rgba(234, 192, 192, 0.678);
+    grid-column: span 9;
+}
+
+
+.clicked{
+    font-family: 'Outfit', sans-serif;
+    font-weight:900;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.674);
+    border-color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.clicked:hover{
+    background-color: grey;
+}
+a{
+    text-decoration: none;
+   
+}
+a:visited{
+    color: black;
+}
+.dynamic_text{
+    width: 100%;
+    height: 100%;
+    background-color: red;
+}
+@media only screen and (min-width: 202px) and (max-width: 255px) {
+    .container{
+        margin-top: 50px;
+        border-radius: 13px;
+        width: 300px;
+        height: 300px;
+        padding: 10px;
+    }
+  }
+  @media only screen and (min-width: 100px) and (max-width: 202px) {
+    .container{
+        margin-top: 90px;
+        border-radius: 13px;
+        width: 150px;
+        height: 300px;
+        padding: 10px;
+    }
+    .heading{
+        font-size: 12px;
+    }
+  }
